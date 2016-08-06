@@ -13,7 +13,7 @@ do
     if echo "${UUIDs[@]}" | grep -w "$UUID" &>/dev/null; then
         echo "The setting of $BundleName is already done!"
     else
-#        defaults write "$Plugin"/Contents/Info DVTPlugInCompatibilityUUIDs -array-add $UUID
+        defaults write "$Plugin"/Contents/Info DVTPlugInCompatibilityUUIDs -array-add $UUID
         echo ------------- Write UUID to $BundleName succeed!
     fi
 done
